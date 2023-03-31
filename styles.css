@@ -1,0 +1,59 @@
+*You can add styles to format your tooltip here*/
+.center_plot {
+    /* margin: auto; */
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.section {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+.firstp {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#sort_button {
+    background-color:black;
+    color: white;
+    margin-top: 15px;
+    /* margin: 50px; */
+    margin-left:200px;
+    text-align: center;
+    position: absolute;
+    border:none;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+  }
+#sort_button:hover {
+    background-color:#f0bcf5;
+    transition: 0.1s;
+}
+#selectButton {
+    background-color:rgb(129, 13, 158);
+    color: white;
+    margin-top: 15px;
+    /* margin: 50px; */
+    margin-left:365;
+    text-align: center;
+    position: absolute;
+    border:none;
+    width: 270;
+    height: 30px;
+    border-radius: 20px;
+}
+#selectButton:hover {
+    background-color:#dfb43e;
+    transition: 0.1s;
+}
+img {
+    float: center;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 605;
+}

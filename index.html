@@ -1,0 +1,225 @@
+
+<html>  
+    <head>  
+    <script type="text/javascript" src="app.js">
+        </script>  
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-zoom@3"></script>
+    
+    </head>
+    <body onload=finalassignment()> 
+    
+    
+    <div>
+    <br>
+    <h1 class="section">Taylor Swift</h1>
+    <div class="lastMain">
+        <!-- <a href="www.comingsoon.com" id="slider"> -->
+          <img id="mainPhoto">
+          <div class="mainSlider">
+            <!-- <img src="photoFromInternet1" style="display: none">
+            <img src="photoFromInternet2" style="display: none">
+            <img src="photoFromInternet3" style="display: none">
+            <img src="photoFromInternet4" style="display: none">
+            <img src="photoFromInternet4" style="display: none">
+            <img src="photoFromInternet5" style="display: none">
+            <img src="photoFromInternet6" style="display: none">
+            <img src="photoFromInternet7*" style="display: none">
+            <img src="photoFromInternet8" style="display: none">
+            <img src="photoFromInternet9" style="display: none">
+            <img src="photoFromInternet10" style="display: none"> -->
+          </div>
+        </a>
+      </div>
+
+    
+    <div class="firstp">
+        <h3>   </h3>
+        <p>
+            Taylor Swift is one of the biggest global superstars of our time. 
+            With over 15 years in the business, Swift shows no sign of stopping short 
+            of complete world domination as she embarks on her first tour since 2018.
+            "The Eras Tour", which made a splash from the start with millions attempting
+            to grab tickets on Ticketmaster and crashing the site, leading to a federal investigation
+            into the company's monopolization of the concert industry, is quite possibly
+            the most anticipated tour of this year -- and it focuses on the "eras" Swift has created
+            with each album she's released. 
+            <br>
+            </p>
+            <p>
+            A mastermind of music and business, Swift's influence is undeniable. To understand this influence, below is 
+            a comprehensive analysis of Taylor Swift’s discography, including song lyrics and trends across her albums.
+        </p>
+    </div>
+
+
+    <div>
+        <h3> Swift Part I: The Sad Autumn Girl or Princess of Positivity?</h3>
+        <p>
+            Do album deep cuts, often the saddest of Swift's music, make her more popular? 
+            Or do the happier tunes prevail? In the node-link diagram below,
+            take a look at each album's positivity (valence) and popularity. 
+            Valence above 0.5 is more positive, below is more negative. Popularity is indicated by
+            the thickness of the links.
+        </p>
+    </div>
+    <div>
+        <h3>Are more positive songs more popular?</h3>
+          
+
+        <div id="q5">
+        
+            </div>
+            <h4>Plot:</h4>
+            <select id="selectButton"></select>
+            <div id="q5_plot" class="center_plot">
+            </div><br>
+        </div>    
+        </div>
+        
+    <div>
+
+    <div>
+        <p>
+            i. Choice of color scheme: Designation pink for positive and blue for negative
+            goes hand in hand with music history-- "singing the blues" was a term for sad songs!
+            <br>
+            ii. Marks and channels: The marks are the nodes and edges/links, the channels are the colors and thickness of the edges/links.
+
+        </p>
+    </div>
+
+    <div>
+        <p>
+        Now that we see that more positive songs are roughly more popular than negative ones, 
+        let's take a look at the variance between average album tempo and valence. 
+        Often times faster tempo songs are more positive -- does this ring true across albums?
+        </p>
+    </div>
+
+    <div>
+        <h3>How do albums vary when it comes to tempo and valence?</h3>
+        
+        <div id="q3">
+        
+            </div>
+            <h4>Plot:</h4>
+            <div id="q3_plot" class="center_plot">
+            </div><br>
+        </div>    
+    </div>
+        
+    <div>
+        <p>
+            i. Choice of color scheme: Designated light pink for tempo and blue for valence for contrast.
+            <br>
+            ii. Marks and channels: The marks are the lines and points of the streamgraph, the channels are the colors and positions of each point on graph.
+
+        </p>
+    </div>
+    <div>
+
+        <div>
+            <p>
+            Now that we've seen how valence and tempo correlate across albums, 
+            let's look to see if there are any trends between average valence and 
+            duration of songs across albums.
+            </p>
+        </div>
+    </div>
+
+    <div>
+    <h3>Are average album valence and duration correlated?</h3>
+    
+    <div id="q1">
+    
+        </div>
+        <h4>Plot:</h4>
+        <div id="q1_plot" class="center_plot">
+        </div><br>
+    </div>    
+    </div>
+
+    <div>
+        <p>
+            i. Choice of color scheme: Color scheme is based on the Lover house themes and general Eras Tour colors for each album. Darker for each deluxe edition and darkest for each Taylor's Version of said albums.
+            <br>
+            ii. Marks and channels: The marks are the points on the scatterplot, the channels are the colors and positions of each point on graph.
+
+        </p>
+    </div>
+
+    <div>
+        <p>
+        It seems 4 minutes per song is the sweet spot! Swift has many albums -- the chart
+        above only shows her main ones. Duration could impact listeners of entire albums --
+        too short and they're not satisfied, too long and it might drag. 
+        So we must ask a question... across all albums ever put out by Swift, which is her longest?
+        </p>
+    </div>
+
+    <div>
+        <h3>What is Taylor Swift's longest album?</h3>
+        
+        <div id="q2">
+        
+            </div>
+            <h4>Plot:</h4>
+            <div id="q2_plot" class="center_plot">
+            <button type="button", id="sort_button" class="center_plot">Sort me!</button>
+            </div><br>
+        </div>    
+        </div>
+        
+    <div>
+
+    <div>
+        <p>
+            i. Choice of color scheme: Black for non-selected bars, chose a rainbow-like color scheme for added flair.
+            <br>
+            ii. Marks and channels: The marks are lines, the channels are the size and position.
+
+        </p>
+    </div>
+    <div>
+        <p>
+            Whew! That was a lot of data. Now for one last fun one. Swift travels all around the 
+            world and sings about it too-- her latest album has a song called "Paris"! That being
+            said, Swift is a Pennsylvanian-born woman, and an "American singer" as she sings in 
+            her folklore song "the lakes". Let's take a look at a map of the United States.
+        </p>
+    </div>
+
+    <div>
+        <h3>Where in the United States does Swift sing about the most?</h3>
+        
+        <div id="q4">
+        
+            </div>
+            <h4>Plot:</h4>
+            <div id="q4_plot" class="center_plot">
+            </div><br>
+        </div>    
+        </div>
+    <div>
+        <p>
+            i. Choice of color scheme: Goes from light blue to dark blue sequentially
+            <br>
+            ii. Marks and channels: The marks state areas, the channels are the colors and spatial area of each state on graph.
+
+        </p>
+    </div>
+        
+    <div>
+
+    
+     
+       
+    </body>  
+    </html>  
+    
